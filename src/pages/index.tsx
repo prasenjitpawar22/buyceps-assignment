@@ -4,6 +4,7 @@ import { useState } from 'react'
 import getPokemons from '../lib/getPokemons'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import Loader from '@/components/Loader'
+import Header from '@/components/Header'
 
 // const inter = Inter({ subsets: ['latin'] })
 const PAGE = 1
@@ -31,7 +32,8 @@ export default function Home({ data }: any) {
   if (data === null) return "empty"
   if (!data) return "loading"
 
-  return (
+  return (<>
+    <Header />
     <div className='bg-slate-200 w-full xs:p-1 md:p-12'>
       <div className='flex flex-col gap-4 justify-center items-center'>
         <div className='flex justify-center'>
@@ -44,6 +46,7 @@ export default function Home({ data }: any) {
         {loader && <Loader />}
       </div>
     </div>
+  </>
   )
 }
 
