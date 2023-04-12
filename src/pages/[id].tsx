@@ -181,9 +181,9 @@ export async function getStaticPaths() {
 
     const { pokemons, } = await getPokemons(0)
 
-    // Get the paths we want to pre-render based on pokemons id
+    // Get the paths we want to pre-build render based on pokemons id
     const paths = pokemons.map((pokemon: Pokemon) => ({
-        params: { id: pokemon.id },
+        params: { id: pokemon.id + pokemon.name },
     }))
 
     return {
