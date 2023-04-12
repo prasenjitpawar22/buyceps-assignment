@@ -43,7 +43,7 @@ const CurrentPage = ({ data, error }: Props) => {
 
     return (
         <div className="flex flex-col gap-2 justify-center text-center w-full
-        bg-slate-200 min-h-screen p-12">
+        bg-slate-200 min-h-screen xs:p-4 md:p-12">
             <div className=" bg-white p-2 rounded shadow">
                 <h1 className="text-4xl font-semibold text-gray-700">{data.name} </h1>
                 <div className="flex xs:flex-col md:flex-row items-center p-2 gap-2 justify-center bg-white">
@@ -55,7 +55,7 @@ const CurrentPage = ({ data, error }: Props) => {
                         height="0"
                         sizes="100vw"
                     />
-                    <div className="grid content-start grid-cols-2 h-fit text-start gap-2 p-4 bg-slate-100 rounded">
+                    <div className="flex md:flex-row flex-wrap max-w-xl xs:flex-col h-fit text-start gap-2 p-4 bg-slate-100 rounded">
                         <h1 className="text-slate-700">
                             <span className="capitalize text-slate-400 font-semibold">
                                 weight:
