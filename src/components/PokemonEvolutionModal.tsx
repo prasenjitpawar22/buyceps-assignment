@@ -26,8 +26,8 @@ const PokemonEvolutionModal = ({ modalState, setModalState, evolutionData }: Pro
                     {/* <!--body */}
                     <div className="flex gap-2 text-center p-5 flex-auto justify-center">
                         {evolutionData?.map((pokemon, index) =>
-                            <div className="flex gap-2 items-center">
-                                <div key={index} className="h-full shadow rounded bg-white p-2 gap-2 flex flex-col justify-between">
+                            <div key={index} className="flex gap-2 items-center">
+                                <div className="h-full shadow rounded bg-white p-2 gap-2 flex flex-col justify-between">
                                     <div className="flex flex-col justify-center gap-2">
                                         <div>
                                             <span className="text-2xl font-semibold text-slate-700">
