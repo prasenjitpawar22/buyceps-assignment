@@ -81,7 +81,7 @@ const CurrentPage = ({ data, error }: Props) => {
                             </span>
                             {data?.types?.map((type, index) =>
                                 <span
-                                    className={` text-white text-sm py-[2px] px-2 rounded 
+                                    className={`mr-1 text-white text-sm py-[2px] px-2 rounded 
                                             ${Type.Bug === type && 'bg-green-800'}  
                                             ${Type.Water === type && 'bg-blue-400'}  
                                             ${Type.Electric === type && 'bg-yellow-400'}  
